@@ -5,7 +5,7 @@ Rails.application.routes.draw do
     resources :replies
   end
 
-  root 'home#index'
+  root 'discussions#index'
 
   devise_for :users, controllers: { registrations: 'registrations' }
 end
