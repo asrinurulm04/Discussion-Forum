@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_12_07_134609) do
+ActiveRecord::Schema.define(version: 2021_12_07_141254) do
 
   create_table "channels", charset: "utf8mb4", force: :cascade do |t|
     t.string "channel"
@@ -36,6 +36,7 @@ ActiveRecord::Schema.define(version: 2021_12_07_134609) do
     t.datetime "updated_at", precision: 6, null: false
     t.integer "discussion_id"
     t.integer "user_id"
+    t.string "slug"
   end
 
   create_table "users", charset: "utf8mb4", force: :cascade do |t|
